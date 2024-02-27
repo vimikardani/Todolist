@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <link rel="stylesheet" type="text/css" href="ToDoList_HackthonAssignment2.css">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>ToDoList</title>
+</head>
+
+<body>
+   <!-- UI for Add Todo Item  -->
+   <div class="container">
+      <div class="todolist">
+         <h1 id="title">TODO LIST</h1>
+         <form action="" id="task-form">
+            <input type="text" id="task_input" placeholder="Type a Task">
+            <input type="button" id="task_submit" value="Add" onclick="addTodoToArr()">
+         </form>
+      </div>
+      <div class="tasklist" id="input_task">
+         <h3>LIST OF TASK</h3>
+         <p id="emptylist">The list is empty</p>
+         <!-- <div id="tasks"></div> -->
+         <ul id="mylist">
+
+         </ul>
+
+
+      </div>
+   </div>
+   <!-- UI for update Todo item in popup menu -->
+   
+   <div class="popup_menu" id="popup_menu">
+      <h3 id="popup_title">EDIT TASK</h3>
+      <form action="" id="popup_form">
+        <p id="demo"></p>
+         <input type="text" id="popupInput" placeholder="task"><br><br>
+         <input type="button" id="update_btn" value="UPDATE" class="action_btn" onclick="updatePopup()">
+         <input type="button" id="cancel_btn" value="CANCEL" class="action_btn" onclick="closePopup()">
+      </form>
+   </div>
+
+   <script src="ToDoList1.js"></script>
+</body>
+
+</html>
